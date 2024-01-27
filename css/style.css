@@ -122,6 +122,7 @@ section h1 {
 
 
 #section-div article img {
+    max-width: 100%;
     min-width: 100%;
     border-radius: 10px 10px 0px 0px;
 } 
