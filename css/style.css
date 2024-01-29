@@ -107,7 +107,7 @@ section h1 {
 
 
 #section-div {
-    max-width: 80%;
+    max-width: 90%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -118,7 +118,7 @@ section h1 {
     position: relative;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgb(68, 68, 68);
-    max-width: 380px;
+    max-width: 550px;
     min-width: 240px;
 }
 
