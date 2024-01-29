@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    min-width: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 18px,
@@ -114,6 +115,7 @@ section h1 {
 }
 
 #section-div article {
+    position: relative;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgb(68, 68, 68);
     max-width: 380px;
@@ -137,14 +139,28 @@ section h1 {
     color: #4b7c39;
 }
 
-#Diff strong {
+.Diff strong {
     font-weight: normal;
     text-decoration: underline;
 }
 
-#more {
+.more {
     color: #4b7c39;
     text-align: end;
+}
+
+.vignette-container {
+    left: 60%;
+    position: absolute;
+    margin: 10px;
+}
+
+.vignette {
+    font-size: 10px;
+    max-width: 58px;
+    min-width: 58px;
+    background-color: green;
+    border-radius: 8px;
 }
 
 
