@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's Cook</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/mobile-first.css">
 </head>
 <body>
 
@@ -243,13 +244,47 @@
             </article>
             
             
+            
+            
+            
+        </div>
+
+        <div id="section-formulaire">
+
+            <h2>
+                <em>Inscrivez-vous ici</em> 👇
+            </h2>
+
+            <form>
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telephone">Téléphone :</label>
+                <input type="tel" id="telephone" name="telephone">
+
+                <label for="motDePasse">Mot de passe :</label>
+                <input type="password" id="motDePasse" name="motDePasse" required>
+
+                <label for="confirmationMotDePasse">Confirmation de mot de passe :</label>
+                <input type="password" id="confirmationMotDePasse" name="confirmationMotDePasse" required>
+
+                <button type="submit">Envoyer</button>
+
+            </form>
+            
         </div>
     
     </section>
 
+    <img id="img-prefooter" src="./cahierDesCharges/logo-et-icones/cooking.svg" alt="images avec débordement">
     
     <footer>
-        <img id="img-prefooter" src="./cahierDesCharges/logo-et-icones/cooking.svg" alt="images avec débordement">
         <div id="footer-content">
             <ul>
                 <li>Acceuil</li>

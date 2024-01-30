@@ -58,11 +58,17 @@ header img {
     padding-left: 1vw;
 }
 
+#header-left nav ul li:hover {
+    cursor: pointer;
+}
+
 #arrow-down {
     padding: 0;
     margin: 0;
     rotate: 90deg;
 }
+
+
 
 
 #header-right {
@@ -79,14 +85,27 @@ header img {
 }
 
 #header-right form input {
-    width: 80%;
+    padding-left: 15px;
+    width: 40%;
     border-radius: 10px;
+    transition: 0.5s;
+}
+
+#header-right form input:hover {
+    width: 80%;
 }
 
 #header-right form img {
     margin-left: 0.5vw;
     max-width: 22px;
 }
+
+
+
+
+
+
+
 
 
 section {
@@ -107,19 +126,28 @@ section h1 {
 
 
 #section-div {
-    max-width: 90%;
+    max-width: 1320px;
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 18px;
 }
 
 #section-div article {
+    background-color: white;
     position: relative;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 400px;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgb(68, 68, 68);
-    max-width: 550px;
     min-width: 240px;
+}
+
+
+#section-div article:hover {
+    filter: brightness(0.8);
+    cursor: pointer;
 }
 
 
@@ -139,6 +167,10 @@ section h1 {
     color: #4b7c39;
 }
 
+#section-div article h2:hover {
+    text-decoration: underline #4b7c39;
+}
+
 .Diff strong {
     font-weight: normal;
     text-decoration: underline;
@@ -147,6 +179,10 @@ section h1 {
 .more {
     color: #4b7c39;
     text-align: end;
+}
+
+.more:hover {
+    text-decoration: underline #4b7c39;
 }
 
 .vignette-container {
@@ -165,8 +201,12 @@ section h1 {
 
 
 
-
-
+#img-prefooter {
+    margin-top: 58px;
+    margin-bottom: -60px;
+    width: 100%;
+    min-height: 100%;
+}
 
 
 footer {
@@ -175,20 +215,17 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 5vh;
+    padding: 12px;
     background-color: #542913;
     color: white;
 }
 
-#img-prefooter {
-    width: 100%;
-    min-height: 100%;
-    background-color: white;
-}
 
 #footer-content {
+    max-width: 100%;
     min-width: 90%;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     margin-bottom: 2vh;
 }
@@ -198,9 +235,15 @@ footer {
     padding-left: 0;
 }
 
+#footer-content ul li:hover {
+    cursor: pointer;
+}
+
 #suivre {
+    min-width: 40%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-top: 16px;
 }
 
@@ -215,8 +258,16 @@ footer {
 
 #img-sn-content{
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     padding-top: 6px;
+}
+
+#img-sn-content img{
+    padding-right: 12px;
+}
+
+#img-sn-content img:hover{
+    cursor: pointer;
 }
 
 #suivre p{
@@ -226,27 +277,41 @@ footer {
 
 
 
+
+
+
+
+
 #Abonnez-vous {
-    max-width: 30%;
+    min-width: 350px;
+    max-width: 40%;
 }
 
 #input-email {
-    min-width: 80%;
+    max-width: 80%;
+    min-width: 30%;
     border-radius: 10px;
 }
 
 #Abonnez-vous p {
     margin: 4px;
     margin-left: 0;
-    max-width: 80%;
+    max-width: 350px;
     color: rgba(255, 255, 255, 0.5);
 }
 
-
-
 #copy {
+    min-width: 100%;
+    max-width: 100%;
+    border-top: 1px solid gray;
+}
+
+#copy p{
+    margin: 25px;
     text-align: center;
     align-self: center;
-    width: 100%;
-    border-top: 1px solid gray;
+}
+
+#checkbox:hover {
+    cursor: pointer;
 }
