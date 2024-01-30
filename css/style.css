@@ -220,6 +220,15 @@ footer {
     color: white;
 }
 
+<<<<<<< HEAD
+=======
+#img-prefooter {
+    margin-top: 58px;
+    margin-bottom: -60px;
+    width: 100%;
+    min-height: 100%;
+}
+>>>>>>> d81745e9a8828d978ac53647219609a857d83867
 
 #footer-content {
     max-width: 100%;
@@ -301,6 +310,7 @@ footer {
 }
 
 #copy {
+<<<<<<< HEAD
     min-width: 100%;
     max-width: 100%;
     border-top: 1px solid gray;
@@ -308,6 +318,10 @@ footer {
 
 #copy p{
     margin: 25px;
+=======
+    margin: 0;
+    padding: 40px;
+>>>>>>> d81745e9a8828d978ac53647219609a857d83867
     text-align: center;
     align-self: center;
 }
