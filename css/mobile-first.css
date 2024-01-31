@@ -1,3 +1,6 @@
+/* je n'ai pas utiliser de rem, mais son utilisation permet de gérer la taille des éléments (nottament de la font) par rapport à la taille définit chez le parent direct de cet élément */
+
+
 * {
     box-sizing: border-box;
     max-width: 100%;
@@ -115,6 +118,10 @@ header img {
     max-width: 22px;
 }
 
+#header-right a {
+    padding: 0;
+    padding-right: 16px;
+}
 
 /* Placez Media Queries ici */
 
@@ -142,6 +149,11 @@ header img {
     #header-right form {
         max-width: 100%;
     } 
+
+    #header-right a {
+        align-self: center;
+        padding: 0;
+    }
 }
 
 @media screen and (min-width: 1520px) {
@@ -175,6 +187,11 @@ header img {
     
     #header-right form input:hover {
         width: 85%;
+    }
+
+    #header-right a {
+        align-self: center;
+        padding: 0;
     }
 }
 
@@ -280,37 +297,59 @@ section p {
 
 
 #section-formulaire {
-    margin-top: 100px;
-    max-width: 80%;
-    min-width: 60%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-#section-formulaire h2 {
+#img-formulaire-side {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    min-width: 75%;
+}
+
+#img-formulaire-side img {
+    max-width: 100%;
+}
+
+
+
+#div-formulaire {
+    margin-top: 100px;
+    max-width: 80%;
+    min-width: 30%;
+}
+
+#div-formulaire h2 {
     text-align: center;
     color: #4b7c39;
 }
 
-#section-formulaire form {
-    min-width: 100%;
+#div-formulaire form {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    min-width: 50%;
+    max-width: 80%;
 }
 
-#section-formulaire form label {
+#div-formulaire form label {
     min-width: 100%;
     padding: 6px;
 }
 
-#section-formulaire form input {
+#div-formulaire form input {
     min-height: 24px;
     border-radius: 5px;
     border: 1px solid black;
     min-width: 100%;
 }
 
-#section-formulaire button {
+#div-formulaire button {
     min-height: 28px;
     align-self: flex-start;
     margin-top: 8px;
@@ -333,6 +372,20 @@ section p {
     #section-div article {
         flex-basis: 450px;
     }
+
+    #section-formulaire {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #img-formulaire-side {
+        max-width: 50%;
+        min-width: 35%;
+    }
+    
+    #img-formulaire-side img {
+        max-width: 80%;
+    }
 }
 
 
@@ -348,6 +401,20 @@ section p {
 
     #section-div article {
         flex-basis: 550px;
+    }
+
+    #section-formulaire {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #img-formulaire-side {
+        max-width: 50%;
+        min-width: 35%;
+    }
+    
+    #img-formulaire-side img {
+        max-width: 80%;
     }
 }
 
@@ -452,7 +519,7 @@ footer {
 
 
 #Abonnez-vous {
-    margin: 10px;
+    padding: 10px;
     min-width: 300px;
     max-width: 40%;
 }
@@ -464,7 +531,7 @@ footer {
 }
 
 #Abonnez-vous p {
-    margin: 4px;
+    padding: 4px;
     margin-left: 0;
     max-width: 350px;
     color: rgba(255, 255, 255, 0.5);
@@ -496,17 +563,20 @@ footer {
 
 @media screen and (min-width: 900px) {
     #footer-content {
+        min-width: 100%;
         flex-wrap: nowrap;
         justify-content: center;
     }
 
     #footer-content ul {
+        max-width: 33%;
         min-width: 10%;
     }
 
     #suivre {
         align-items: center;
-        min-width: 60%;
+        max-width: 60%;
+        min-width: 33%;
     }
 
     #Abonnez-vous {

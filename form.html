@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="./css/mobile-first.css">
+</head>
+<body>
+
+    <header>
+
+        <div id="header-left">
+            <div id="header-logo">
+                <a href="./index.html">
+                    <img id="logo" src="./cahierDesCharges/logo-et-icones/logo.svg" alt="logo">
+                </a>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li>
+                        Acceuil
+                    </li>
+                    <li>
+                        Recette
+                        <img id="arrow-down" src="./cahierDesCharges/logo-et-icones/arrow-down.png" alt="#">
+                    </li>
+                    <li>
+                        Tendances
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+            
+        <div id="header-right">
+            <form method="get">
+                <input type="text" id="search-input" placeholder="  Rechercher...">
+                <img src="./cahierDesCharges/logo-et-icones/search-solid-white.svg" alt="searchBar">
+            </form>
+            <a href="./form.html"><img src="./cahierDesCharges/logo-et-icones/profil.png" alt="#"></a>
+        </div>
+            
+    </header>
+    
+    <section id="section-formulaire">
+
+        <div id="img-formulaire-side">
+            <img src="./cahierDesCharges/images/sun-beach-ice-cream-lunettes-soleil-ete-ravissantes_145644-6962.jpg" alt="#">
+        </div>
+
+        <div id="div-formulaire">
+
+            <h1>
+                <em>Inscrivez-vous ici</em> 👇
+            </h1>
+
+            <form method="get">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telephone">Téléphone :</label>
+                <input type="tel" id="telephone" name="telephone">
+
+                <label for="motDePasse">Mot de passe :</label>
+                <input type="password" id="motDePasse" name="motDePasse" required>
+
+                <label for="confirmationMotDePasse">Confirmation de mot de passe :</label>
+                <input type="password" id="confirmationMotDePasse" name="confirmationMotDePasse" required>
+
+                <button type="submit">Envoyer</button>
+
+            </form>
+            
+        </div>
+    
+    </section>
+
+    <img id="img-prefooter" src="./cahierDesCharges/logo-et-icones/cooking.svg" alt="images avec débordement">
+    
+    <footer>
+        <div id="footer-content">
+            <ul>
+                <li>Acceuil</li>
+                <li>Recettes</li>
+                <li>Contact</li>
+                <li>Politique de confidentialité</li>
+            </ul>
+            <div id="suivre">
+                <h3 style="font-family: 'Comfortaa', cursive;">
+                    Suivez-nous
+                </h3>
+                <div id="img-sn-content">
+                    <img src="./cahierDesCharges/logo-et-icones/social_network/facebook.png" alt="#">
+                    <img src="./cahierDesCharges/logo-et-icones/social_network/instagram.png" alt="#">
+                    <img src="./cahierDesCharges/logo-et-icones/social_network/twitter.png" alt="#">
+                </div>
+            </div>
+            <div id="Abonnez-vous">
+                <h3 style="font-family: 'Comfortaa', cursive;">
+                    Abonnez-vous à notre NewsLetter
+                </h3>
+                <p>Email</p>
+                <form action="">
+                    <input type="text" id="input-email" placeholder="   Votre Email">
+                    <p>
+                        <input id="checkbox" type="checkbox">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste hic maxime dolores illo doloremque.
+                    </p>
+                </form>
+            </div>
+        </div>
+        <div id="copy">
+            <p>
+                © 2022 MODE 83
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
