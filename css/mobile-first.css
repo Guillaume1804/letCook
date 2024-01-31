@@ -28,7 +28,7 @@ body {
 }
 
 
-
+/* Partie Header */
 
 header {
     display: flex;
@@ -43,6 +43,7 @@ header img {
 }
 
 
+/* Partie Gauche du Header */
 
 #header-left {
     display: flex;
@@ -87,6 +88,7 @@ header img {
 }
 
 
+/* Partie Droite du Header */
 
 #header-right {
     display: flex;
@@ -197,7 +199,7 @@ header img {
 
 
 
-
+/* Partie de la Section principale du Body */
 
 section {
     display: flex;
@@ -219,6 +221,7 @@ section p {
 }
 
 
+/* Conteneur parent des Articles */
 
 #section-div {
     max-width: 90%;
@@ -227,6 +230,9 @@ section p {
     justify-content: center;
     gap: 18px;
 }
+
+
+/* Partie concernant tout les articles */
 
 #section-div article {
     background-color: white;
@@ -295,6 +301,8 @@ section p {
 
 
 
+
+/* Partie concernant la page du formulaire */
 
 #section-formulaire {
     max-width: 100%;
@@ -438,6 +446,7 @@ section p {
 
 
 
+/* Partie concernant le footer des pages */
 
 footer {
     max-width: 100%;
@@ -452,6 +461,8 @@ footer {
 }
 
 
+/* Conteneur principal des éléments du footer */
+
 #footer-content {
     max-width: 100%;
     display: flex;
@@ -459,6 +470,9 @@ footer {
     justify-content: space-between;
     margin-bottom: 2vh;
 }
+
+
+/* Partie du footer avec la liste */
 
 #footer-content ul {
     margin-top: 10px;
@@ -474,6 +488,7 @@ footer {
 }
 
 
+/* Partie avec les images de réseaux sociaux */
 
 #suivre {
     min-width: 100%;
@@ -485,6 +500,7 @@ footer {
     padding-bottom: 16px;
 
 }
+
 
 #footer-content img {
     display: flex;
@@ -516,7 +532,7 @@ footer {
 
 
 
-
+/* Partie avec l'abonnement à la newsletter */
 
 #Abonnez-vous {
     padding: 10px;
@@ -539,6 +555,7 @@ footer {
 
 
 
+/* Partie la plus basse du footer */
 
 #copy {
     min-width: 100%;
